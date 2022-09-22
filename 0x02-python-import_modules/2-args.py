@@ -4,10 +4,10 @@ if __name__ == "__main__":
     import sys
     count = len(sys.argv) - 1
     if count == 0:
-        print("0 arguement:")
+        print("0 argument:")
     elif count == 1:
-        print("1 arguement:")
+        print("1 argument:")
     else:
-        print("{} arguements:".format(count))
+        print("{} arguments:".format(count))
     for i in range(count):
         print("{}:{}".format(i+1, sys.argv[i+1]))
