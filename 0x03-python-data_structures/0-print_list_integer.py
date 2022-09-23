@@ -6,5 +6,5 @@ def print_list_integer(my_list):
     Args:
     my_list - list of integers defauult []
     """
-    for i in range(my_list):
+    for i in my_list:
         print("{:d}".format(i))
