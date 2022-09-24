@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 def element_at(my_list, idx):
-    if idx < 0 or idx > my_list:
+    """
+    retrieve an element from a list
+    Args:
+        my_list - list to access
+        idx - index
+    """
+    if idx < 0 or idx >= len(my_list):
         return None
-    for i in my_list:
-        if i == idx:
-            return i
-        else:
-            return None
+    return my_list[idx]
