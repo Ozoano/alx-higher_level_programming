@@ -8,6 +8,6 @@ def print_matrix_integer(matrix=[[]]):
 		matrix integers
 	"""
 	for row in matrix:
-        for val in row:
-            print("{}".format(val), end=" ")
-        print()
+            for val in row:
+                print("{}".format(val), end=" ")
+            print()
