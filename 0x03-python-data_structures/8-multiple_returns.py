@@ -14,4 +14,4 @@ def multiple_returns(sentence):
 
 if __name__ == '__main__':
     l, f = multiple_returns("At School, I learnt C!")
-print("Length: {:d} - First character: {}".format(l, f))
+    print("Length: {:d} - First character: {}".format(l, f))
