@@ -10,9 +10,9 @@ def delete_at(my_list=[], idx=0):
         my_list - if idx is out of range
     '''
     index = len(my_list)
-    val = my_list[idx]
-
     if idx < 0 or idx >= index:
         return my_list
+
+    val = my_list[idx]
     my_list.remove(val)
     return my_list
