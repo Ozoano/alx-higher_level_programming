@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 def multiply_by_2(a_dict):
     mult = {}
-    if a_dict is None:
+    copy_dict = a_dict[:]
+
+    if copy_dict is None:
         return None
-    for k, v in a_dict.items():
+    for k, v in copy_dict.items():
         for item in value:
             mult.append(v * 2)
-        return mult
+        return copy_dict
