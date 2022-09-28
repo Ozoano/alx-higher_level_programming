@@ -3,7 +3,7 @@ def best_score(a_dict):
     """
     returns a key with the biggest integer
     """
-    if a_dict is None:
+    if a_dict is None or a_dict == {}:
         return None
     return max(a_dict, key=a_dict.get)
 
