@@ -2,5 +2,4 @@
 def multiply_by_2(a_dict):
     if a_dict is None:
         return None
-    for k in a_dict:
-        return (a_dict[k] * 2)
+    return (map(lambda k: a_dict[k] * 2, a_dict))
