@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-def uniq_add(my_list=[]):
-    result = sum(set(my_list))
-    return result
+def search_replace(my_list, search, replace):
+    my_copy = my_list[:]
+    my_copy = [x if x != search else replace for x in my_copy]
+    return my_copy
