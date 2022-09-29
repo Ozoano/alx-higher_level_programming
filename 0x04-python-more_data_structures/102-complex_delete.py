@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 def complex_delete(a_dict, val):
+    """
+    deletes a value in a dictionary
+    """
     if a_dict is None:
         return None
-
+    del_key = None
     for k in list(a_dict):
         if a_dict[k] == val:
             del a_dict[k]
