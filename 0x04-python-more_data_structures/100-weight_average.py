@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 def weight_average(my_list=[]):
-    if my_list is None or my_list == {}:
+    if my_list is None or my_list == []:
         return None
     total = sum(map(lambda x: x[0] * x[1], my_list))
     num = sum(map(lambda x: x[1], my_list))
-    ave = total / num
-    return ave
+    return total / num
 
 
 if __name__ == '__main__':
