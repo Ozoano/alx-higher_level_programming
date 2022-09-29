@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 def complex_delete(a_dict, val):
+    if a_dict is None:
+        return None
+
     for k in list(a_dict):
         if a_dict[k] == val:
             del a_dict[k]
