@@ -13,6 +13,7 @@ def complex_delete(a_dict, val):
         del a_dict[key]
     return a_dict
 
+
 if __name__ == '__main__':
     a_dictionary = {'lang': "C", 'track': "Low", 'pref': "C", 'ids': [1, 2, 3]}
     new_dict = complex_delete(a_dictionary, 'C')
