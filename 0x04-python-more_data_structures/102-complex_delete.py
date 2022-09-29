@@ -5,11 +5,12 @@ def complex_delete(a_dict, val):
     """
     if a_dict is None:
         return None
-    del_key = None
-    keys = tuple(a_dict.keys())
-    for k in keys:
+    del_key = []
+    for k in a_dict:
         if a_dict[k] == val:
-            del a_dict[k]
+            del_key.append(k)
+    for key in del_key:
+        del a_dict[key]
     return a_dict
 
 if __name__ == '__main__':
