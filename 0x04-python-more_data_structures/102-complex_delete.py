@@ -3,7 +3,7 @@ def complex_delete(a_dict, val):
     if a_dict is None:
         return None
 
-    for k in a_dict:
+    for k in list(a_dict):
         if k == val:
             del a_dict[k]
     return a_dict
