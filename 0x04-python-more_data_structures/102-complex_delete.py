@@ -5,12 +5,13 @@ def complex_delete(a_dict, val):
     """
     if a_dict is None:
         return None
-    del_key = []
-    for k in a_dict:
+    if a_dict is None:
+        return None
+
+    keys = tuple(a_dict.keys())
+    for k in keys:
         if a_dict[k] == val:
-            del_key.append(k)
-    for key in del_key:
-        del a_dict[key]
+            del a_dict[k]
     return a_dict
 
 
