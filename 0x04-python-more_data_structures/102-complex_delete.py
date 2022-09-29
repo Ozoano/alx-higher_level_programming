@@ -6,7 +6,8 @@ def complex_delete(a_dict, val):
     if a_dict is None:
         return None
     del_key = None
-    for k in list(a_dict):
+    keys = tuple(a_dict.keys())
+    for k in keys:
         if a_dict[k] == val:
             del a_dict[k]
     return a_dict
